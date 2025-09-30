@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Innovate & Elevate Co.</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS (Animate on Scroll) Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+        /* Custom gradient for hero section - Light Orange Theme */
+        .hero-gradient {
+            background: linear-gradient(135deg, #ea580c 0%, #fb923c 50%, #fdba74 100%);
+        }
+        /* Custom animation for buttons */
+        .btn-hover-effect {
+            transition: all 0.3s ease;
+        }
+        .btn-hover-effect:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        /* Floating animation for team members */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+            50% {
+                transform: translateY(-8px);
+            }
+            100% {
+                transform: translateY(0px);
+            }
+        }
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-gray-800">Innovate & Elevate</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="index.html" class="text-gray-600 hover:text-orange-600 transition-colors">Home</a>
+                <a href="about_us.html" class="text-gray-600 hover:text-orange-600 transition-colors">About</a>
+                <a href="#services" class="text-gray-600 hover:text-orange-600 transition-colors">Services</a>
+                <a href="#team" class="text-gray-600 hover:text-orange-600 transition-colors">Team</a>
+                <a href="contact.html" class="bg-orange-600 text-white px-4 py-2 rounded-full font-semibold btn-hover-effect">Contact Us</a>
+            </div>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-800 focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4 bg-white">
+            <a href="index.html" class="block text-gray-600 py-2 hover:text-orange-600">Home</a>
+            <a href="about_us.html" class="block text-gray-600 py-2 hover:text-orange-600">About</a>
+            <a href="#services" class="block text-gray-600 py-2 hover:text-orange-600">Services</a>
+            <a href="#team" class="block text-gray-600 py-2 hover:text-orange-600">Team</a>
+            <a href="contact.html" class="block bg-orange-600 text-white mt-2 px-4 py-2 rounded-full font-semibold text-center">Contact Us</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative text-white py-24 sm:py-32 md:py-40 flex items-center justify-center text-center overflow-hidden">
+            <div class="absolute inset-0 hero-gradient"></div>
+            <div class="absolute inset-0 bg-black opacity-20"></div>
+            <div class="relative z-10 container mx-auto px-6">
+                <h1 class="text-4xl sm:text-5xl md:text-6xl font-extrabold leading-tight mb-4" data-aos="fade-up">Building Futures, Together.</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    We are a passionate team dedicated to fostering growth, driving innovation, and unlocking the potential within individuals and organizations.
+                </p>
+            </div>
+        </section>
+
+        <!-- Our Mission Section -->
+        <section id="about" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" data-aos="fade-down">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Our Mission</h2>
+                    <p class="mt-4 text-lg text-gray-600">To empower and elevate through strategic solutions.</p>
+                </div>
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div data-aos="fade-right">
+                        <img src="https://placehold.co/600x400/FDBA74/FFFFFF?text=Collaboration" alt="Team collaborating on a project" class="rounded-lg shadow-2xl w-full">
+                    </div>
+                    <div data-aos="fade-left" data-aos-delay="200">
+                        <h3 class="text-2xl font-semibold text-gray-800 mb-4">The Spark of Innovation</h3>
+                        <p class="text-gray-600 mb-4">
+                            Innovate & Elevate Co. was founded on a simple yet powerful idea: that the right guidance and support can transform potential into excellence. Our journey began with a small team of experts passionate about making a tangible impact.
+                        </p>
+                        <p class="text-gray-600">
+                            Today, we've grown into a dynamic consultancy that partners with clients to build stronger teams, foster continuous learning, and create pathways to success. We believe in a collaborative approach, working hand-in-hand to achieve remarkable results.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" data-aos="fade-down">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">How We Help You Grow</h2>
+                    <p class="mt-4 text-lg text-gray-600">We offer a suite of services designed to address your unique challenges.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Consultation Card -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300" data-aos="zoom-in-up">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 text-orange-600 mx-auto mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Expert Consultation</h3>
+                        <p class="text-gray-600 mb-6">Strategic insights and tailored solutions to overcome your biggest challenges and achieve your goals.</p>
+                        <a href="#" class="font-semibold text-orange-600 hover:text-orange-700 transition-colors">Learn More &rarr;</a>
+                    </div>
+                    <!-- Learning Card -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300" data-aos="zoom-in-up" data-aos-delay="200">
+                         <div class="flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 text-orange-600 mx-auto mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 14l9-5-9-5-9 5 9 5z"></path><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-5.998 12.078 12.078 0 01.665-6.479L12 14z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-5.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222 4 2.222V20M1 12v7a2 2 0 002 2h14a2 2 0 002-2v-7"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Learning & Development</h3>
+                        <p class="text-gray-600 mb-6">Engaging workshops and programs designed to upskill your team and foster a culture of continuous growth.</p>
+                        <a href="#" class="font-semibold text-orange-600 hover:text-orange-700 transition-colors">Explore Programs &rarr;</a>
+                    </div>
+                    <!-- Placement Card -->
+                    <div class="bg-white p-8 rounded-lg shadow-lg text-center transform hover:-translate-y-2 transition-transform duration-300" data-aos="zoom-in-up" data-aos-delay="400">
+                        <div class="flex items-center justify-center h-16 w-16 rounded-full bg-orange-100 text-orange-600 mx-auto mb-6">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Talent Placement</h3>
+                        <p class="text-gray-600 mb-6">Connecting exceptional talent with forward-thinking companies to build high-performing teams.</p>
+                        <a href="#" class="font-semibold text-orange-600 hover:text-orange-700 transition-colors">Find Talent &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Team Section -->
+        <section id="team" class="py-16 md:py-24 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12" data-aos="fade-down">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900">Meet Our Team</h2>
+                    <p class="mt-4 text-lg text-gray-600">The passionate individuals driving our success.</p>
+                </div>
+                <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="text-center animate-float" data-aos="fade-up">
+                        <img src="https://placehold.co/200x200/FFEDD5/C2410C?text=Jane+D." alt="Team Member Jane Doe" class="w-32 h-32 mx-auto rounded-full shadow-lg mb-4 transform transition-transform duration-300 hover:scale-105">
+                        <h4 class="text-lg font-bold">Jane Doe</h4>
+                        <p class="text-gray-500">Founder & CEO</p>
+                    </div>
+                    <!-- Team Member 2 -->
+                    <div class="text-center animate-float" data-aos="fade-up" data-aos-delay="150" style="animation-delay: 0.5s;">
+                        <img src="https://placehold.co/200x200/FED7AA/C2410C?text=John+S." alt="Team Member John Smith" class="w-32 h-32 mx-auto rounded-full shadow-lg mb-4 transform transition-transform duration-300 hover:scale-105">
+                        <h4 class="text-lg font-bold">John Smith</h4>
+                        <p class="text-gray-500">Head of Strategy</p>
+                    </div>
+                    <!-- Team Member 3 -->
+                    <div class="text-center animate-float" data-aos="fade-up" data-aos-delay="300" style="animation-delay: 1s;">
+                        <img src="https://placehold.co/200x200/FDBA74/C2410C?text=Emily+W." alt="Team Member Emily White" class="w-32 h-32 mx-auto rounded-full shadow-lg mb-4 transform transition-transform duration-300 hover:scale-105">
+                        <h4 class="text-lg font-bold">Emily White</h4>
+                        <p class="text-gray-500">Lead Consultant</p>
+                    </div>
+                    <!-- Team Member 4 -->
+                    <div class="text-center animate-float" data-aos="fade-up" data-aos-delay="450" style="animation-delay: 1.5s;">
+                        <img src="https://placehold.co/200x200/FED7AA/C2410C?text=Michael+B." alt="Team Member Michael Brown" class="w-32 h-32 mx-auto rounded-full shadow-lg mb-4 transform transition-transform duration-300 hover:scale-105">
+                        <h4 class="text-lg font-bold">Michael Brown</h4>
+                        <p class="text-gray-500">Director of Learning</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Call to Action Section -->
+        <section id="contact" class="py-16 md:py-24 bg-orange-600 text-white">
+             <div class="container mx-auto px-6 text-center" data-aos="fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Ready to Elevate Your Team?</h2>
+                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-8">
+                    Let's start a conversation about your goals and how we can help you reach them.
+                </p>
+                <a href="#" class="bg-white text-orange-600 px-8 py-3 rounded-full font-bold text-lg btn-hover-effect">Get In Touch</a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Innovate & Elevate Co.</h3>
+                    <p class="text-gray-400 mb-4">
+                        Building futures, together. We are dedicated to fostering growth and unlocking potential.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-orange-400 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" /></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-orange-400 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" /></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-orange-400 transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014V8.588h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.48 9.763H6.49v-8.59H3.525v8.59zM17.64 3H6.36A3.36 3.36 0 003 6.36v11.28A3.36 3.36 0 006.36 21h11.28A3.36 3.36 0 0021 17.64V6.36A3.36 3.36 0 0017.64 3z" clip-rule="evenodd" /></svg>
+                        </a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="about_us.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="#team" class="text-gray-400 hover:text-white transition-colors">Our Team</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- Services -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Expert Consultation</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Learning & Development</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Talent Placement</a></li>
+                    </ul>
+                </div>
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Get In Touch</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>123 Innovation Drive, Suite 100</li>
+                        <li>New Delhi, 110001, India</li>
+                        <li class="pt-2"><a href="tel:+911234567890" class="hover:text-white transition-colors">(+91) 123-456-7890</a></li>
+                        <li><a href="mailto:contact@innovateelevate.com" class="hover:text-white transition-colors">contact@innovateelevate.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-700 pt-6 text-center text-gray-400">
+                <p>&copy; 2024 Innovate & Elevate Co. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript to initialize AOS and handle mobile menu -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800, // values from 0 to 3000, with step 50ms
+            once: true, // whether animation should happen only once - while scrolling down
+        });
+
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+    </script>
+</body>
+</html>
+
+
+
+
+
