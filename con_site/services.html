@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anoka Smart Technologies - Training & Placement Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lucide-react@0.294.0/dist/lucide-react.js"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #FF9800, #F44336);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #FF9800, #F44336);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .cta-button {
+            transition: all 0.3s ease;
+        }
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+        .card-hover {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold gradient-text">Anoka Smart Technologies</h1>
+            <nav class="hidden md:flex space-x-8 items-center">
+                <a href="#services" class="text-gray-600 hover:text-orange-500 transition">Services</a>
+                <a href="#courses" class="text-gray-600 hover:text-orange-500 transition">Courses</a>
+                <a href="#process" class="text-gray-600 hover:text-orange-500 transition">Our Process</a>
+                <a href="#why-us" class="text-gray-600 hover:text-orange-500 transition">Why Us</a>
+                <a href="contact.html" class="gradient-bg text-white font-semibold px-4 py-2 rounded-full cta-button">Get Started</a>
+            </nav>
+            <button class="md:hidden text-gray-700">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="container mx-auto px-6">
+        <section class="py-20 text-center">
+            <h2 class="text-5xl md:text-6xl font-extrabold text-gray-800 leading-tight" data-aos="fade-down">
+                Unlock Your <span class="gradient-text">Career Potential</span>.
+            </h2>
+            <p class="mt-6 text-lg text-gray-600 max-w-2xl mx-auto" data-aos="fade-up" data-aos-delay="200">
+                We provide industry-leading training and personalized placement services to bridge the gap between talent and opportunity. Let us guide you to your dream job.
+            </p>
+            <div class="mt-10" data-aos="zoom-in" data-aos-delay="400">
+                <a href="#contact" class="gradient-bg text-white font-bold py-4 px-8 rounded-full text-lg cta-button inline-block">
+                    Request a Free Consultation
+                </a>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services" class="py-20">
+            <div class="text-center mb-12" data-aos="fade-up">
+                <h3 class="text-sm font-semibold text-orange-500 uppercase tracking-widest">Our Services</h3>
+                <h2 class="text-4xl font-bold text-gray-800 mt-2">What We Offer</h2>
+            </div>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 card-hover" data-aos="fade-up" data-aos-delay="100">
+                    <div class="gradient-bg w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-award"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Corporate Training</h3>
+                    <p class="text-gray-600">Customized training programs for teams and individuals to upskill in the latest technologies and soft skills demanded by the industry.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 card-hover" data-aos="fade-up" data-aos-delay="200">
+                    <div class="gradient-bg w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><polyline points="16 11 18 13 22 9"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Placement Assistance</h3>
+                    <p class="text-gray-600">Dedicated support including resume building, interview preparation, and connecting you with our vast network of partner companies.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 card-hover" data-aos="fade-up" data-aos-delay="300">
+                    <div class="gradient-bg w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-bar-chart-big"><path d="M3 3v18h18"/><path d="M7 12h4v6H7z"/><path d="M15 7h4v11h-4z"/></svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-800 mb-3">Career Counseling</h3>
+                    <p class="text-gray-600">Expert guidance to help you navigate your career path, identify your strengths, and make informed decisions for a successful future.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="py-20">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h3 class="text-sm font-semibold text-orange-500 uppercase tracking-widest">Our Programs</h3>
+                    <h2 class="text-4xl font-bold text-gray-800 mt-2">Industry-Vetted Curriculum</h2>
+                    <p class="text-gray-600 mt-4 max-w-2xl mx-auto">Choose your specialization and master the skills top companies are looking for.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Course Card 1: MERN Stack -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-orange-500 card-hover" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">MERN Stack Specialization</h3>
+                        <p class="text-gray-600 mb-6">Master MongoDB, Express.js, React, and Node.js to build powerful, scalable web applications.</p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Data Structures & Algorithms</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Frontend with React & Redux</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Backend with Node.js & Express</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>System Design & Project Deployment</span></li>
+                        </ul>
+                    </div>
+                    <!-- Course Card 2: Spring Boot -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-orange-500 card-hover" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Java Spring Boot Specialization</h3>
+                        <p class="text-gray-600 mb-6">Build robust, enterprise-grade applications with Java, Spring Boot, and microservices architecture.</p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Data Structures with Java</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Java Backend with Spring Boot</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Microservices & System Design</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>DevOps and Cloud Deployment</span></li>
+                        </ul>
+                    </div>
+                     <!-- Course Card 3: Data Science -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-orange-500 card-hover" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Data Science & ML Specialization</h3>
+                        <p class="text-gray-600 mb-6">Dive into data analysis, machine learning, and visualization to solve complex business problems.</p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Python for Data Science</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Machine Learning Models</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Deep Learning with TensorFlow</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Data Visualization Tools</span></li>
+                        </ul>
+                    </div>
+                     <!-- Course Card 4: DevOps -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-orange-500 card-hover" data-aos="fade-up" data-aos-delay="100">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">Cloud & DevOps Specialization</h3>
+                        <p class="text-gray-600 mb-6">Deploy and manage scalable, secure cloud infrastructure using modern DevOps practices.</p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>AWS/Azure Fundamentals</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>CI/CD Pipelines with Jenkins</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Docker & Kubernetes</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Infrastructure as Code (Terraform)</span></li>
+                        </ul>
+                    </div>
+                     <!-- Course Card 5: QA Testing -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-orange-500 card-hover" data-aos="fade-up" data-aos-delay="200">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">QA & Automation Specialization</h3>
+                        <p class="text-gray-600 mb-6">Master software testing principles and build robust automated testing frameworks for web and mobile.</p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Manual & Agile Testing</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Selenium WebDriver Automation</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>API Testing with Postman</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Performance & Security Testing</span></li>
+                        </ul>
+                    </div>
+                     <!-- Course Card 6: UI/UX -->
+                    <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300 border-t-4 border-orange-500 card-hover" data-aos="fade-up" data-aos-delay="300">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-4">UI/UX Design Specialization</h3>
+                        <p class="text-gray-600 mb-6">Understand user-centric design to create intuitive and visually appealing digital experiences.</p>
+                        <ul class="space-y-3 text-gray-700">
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>User Research & Personas</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Wireframing & Prototyping (Figma)</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Visual Design Principles</span></li>
+                            <li class="flex items-start"><svg class="w-5 h-5 text-orange-600 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" /></svg><span>Usability Testing</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Process Section -->
+        <section id="process" class="py-20">
+             <div class="text-center mb-12" data-aos="fade-up">
+                <h3 class="text-sm font-semibold text-orange-500 uppercase tracking-widest">How It Works</h3>
+                <h2 class="text-4xl font-bold text-gray-800 mt-2">Our Streamlined Process</h2>
+            </div>
+            <div class="relative">
+                <!-- Dotted line -->
+                <div class="hidden md:block absolute top-10 left-0 w-full h-0.5 bg-gray-300 border-dashed" data-aos="zoom-in"></div>
+                
+                <div class="grid md:grid-cols-4 gap-8 relative">
+                    <!-- Step 1 -->
+                    <div class="text-center" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="bg-white border-2 border-orange-200 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-10">
+                            <span class="text-3xl font-bold gradient-text">1</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-gray-700">Consultation</h4>
+                        <p class="text-gray-600 text-sm mt-1">We assess your skills, goals, and aspirations.</p>
+                    </div>
+                    <!-- Step 2 -->
+                    <div class="text-center" data-aos="zoom-in" data-aos-delay="200">
+                        <div class="bg-white border-2 border-orange-200 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-10">
+                            <span class="text-3xl font-bold gradient-text">2</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-gray-700">Skill Enhancement</h4>
+                        <p class="text-gray-600 text-sm mt-1">Enroll in tailored training programs to fill skill gaps.</p>
+                    </div>
+                    <!-- Step 3 -->
+                    <div class="text-center" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="bg-white border-2 border-orange-200 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-10">
+                            <span class="text-3xl font-bold gradient-text">3</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-gray-700">Profile Building</h4>
+                        <p class="text-gray-600 text-sm mt-1">We polish your resume and prepare you for interviews.</p>
+                    </div>
+                    <!-- Step 4 -->
+                    <div class="text-center" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="bg-white border-2 border-orange-200 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-10">
+                            <span class="text-3xl font-bold gradient-text">4</span>
+                        </div>
+                        <h4 class="font-bold text-lg text-gray-700">Placement</h4>
+                        <p class="text-gray-600 text-sm mt-1">We connect you with top companies for interviews.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Why Us Section -->
+        <section id="why-us" class="py-20 bg-white rounded-2xl my-10 px-8 overflow-hidden">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div data-aos="fade-right">
+                     <h3 class="text-sm font-semibold text-orange-500 uppercase tracking-widest">Why Choose Us</h3>
+                    <h2 class="text-4xl font-bold text-gray-800 mt-2">Your Success is Our Priority</h2>
+                    <p class="text-gray-600 mt-4 mb-6">With years of experience and a passion for fostering talent, we are more than just consultants. We are your career partners.</p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="gradient-bg rounded-full p-1 mr-4 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Industry Experts</h4>
+                                <p class="text-gray-600">Learn from professionals with real-world experience.</p>
+                            </div>
+                        </li>
+                         <li class="flex items-start">
+                            <div class="gradient-bg rounded-full p-1 mr-4 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Strong Corporate Network</h4>
+                                <p class="text-gray-600">Access exclusive job openings from our extensive list of hiring partners.</p>
+                            </div>
+                        </li>
+                         <li class="flex items-start">
+                            <div class="gradient-bg rounded-full p-1 mr-4 mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-check"><path d="M20 6 9 17l-5-5"/></svg>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-800">Proven Track Record</h4>
+                                <p class="text-gray-600">Hundreds of successful placements and satisfied candidates.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" alt="Team discussing career plans" class="rounded-xl shadow-2xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-20">
+            <div class="gradient-bg rounded-2xl p-8 md:p-16 text-center" data-aos="zoom-in-up">
+                <h2 class="text-4xl font-bold text-white">Ready to Take the Next Step?</h2>
+                <p class="text-white mt-4 max-w-xl mx-auto">Fill out the form below, and one of our career experts will get in touch with you shortly to discuss your future.</p>
+                <div class="bg-white rounded-xl p-8 max-w-2xl mx-auto mt-10 shadow-lg">
+                    <form>
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <input type="text" placeholder="Your Name" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400 transition">
+                            <input type="email" placeholder="Your Email" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400 transition">
+                        </div>
+                        <div class="mt-4">
+                             <input type="tel" placeholder="Phone Number" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400 transition">
+                        </div>
+                        <div class="mt-4">
+                            <textarea placeholder="Your Message" rows="4" class="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-orange-400 transition"></textarea>
+                        </div>
+                        <div class="mt-6">
+                            <button type="submit" class="w-full gradient-bg text-white font-bold py-3 px-6 rounded-lg text-lg cta-button">
+                                Send Message
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-10">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div class="col-span-1">
+                    <h3 class="text-xl font-bold gradient-text">Anoka Smart Technologies</h3>
+                    <p class="text-gray-400 mt-4 text-sm">Your dedicated partner in career advancement. We provide top-tier training and placement services to help you achieve your professional goals.</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-semibold text-lg tracking-wider">Quick Links</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Services</a></li>
+                        <li><a href="#courses" class="text-gray-400 hover:text-white transition">Courses</a></li>
+                        <li><a href="#process" class="text-gray-400 hover:text-white transition">Our Process</a></li>
+                        <li><a href="#why-us" class="text-gray-400 hover:text-white transition">Why Us</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Contact</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Legal -->
+                <div>
+                    <h4 class="font-semibold text-lg tracking-wider">Legal</h4>
+                    <ul class="mt-4 space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Us -->
+                <div>
+                    <h4 class="font-semibold text-lg tracking-wider">Contact Us</h4>
+                    <ul class="mt-4 space-y-3 text-gray-400">
+                        <li class="flex items-start">
+                            <svg class="w-5 h-5 mr-3 mt-1 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <span>123 Tech Park, Visakhapatnam, AP, India</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                            <span>+91 12345 67890</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-5 h-5 mr-3 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                            <span>contact@AnokaSmartTechnologies.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 text-sm text-center md:text-left">&copy; 2024 Anoka Smart Technologies. All Rights Reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-twitter"><path d="M22 4s-.7 2.1-2 3.4c1.6 1.4 3.3 4.4 3.3 4.4s-1.4-.6-2.8-.9c-1.2 2.2-2.8 4-4.8 4.4s-4.4-.2-6.3-2.2s-2.8-4.8-2-6.8s2.6-4.4 5.1-5.5s5.1-.1 7 .8z"/></svg>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 800,
+        once: true,
+        offset: 100,
+      });
+    </script>
+</body>
+</html>
+
